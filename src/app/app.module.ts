@@ -10,6 +10,7 @@ import { SearchComponent } from './components/search/search.component';
 import { CatalogPageComponent } from './pages/catalog-page/catalog-page.component';
 import { FilmPageComponent } from './pages/film-page/film-page.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { APP_BASE_HREF } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
     BrowserModule,
     AppRoutingModule
   ],
+  providers: [{provide: APP_BASE_HREF, useValue: '/nettest/'}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

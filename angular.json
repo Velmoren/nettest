@@ -99,6 +99,14 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "buildTarget": "netkliks-app:build:production",
+            "repo": "https://github.com/Velmoren/nettest.git",
+            "baseHref": "/nettest/"
+          }
         }
       }
     }
