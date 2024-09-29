@@ -1,0 +1,18 @@
+<a [routerLink]="['/film', film.id]" class="content-cards__item">
+    <div class="content-cards__item--img">
+        <img [src]="film.image" [alt]="film.title">
+    </div>
+
+    <div class="content-cards__item--title">
+        <h5>{{ film.title }},</h5>
+        <span>{{ film.original }}</span>
+    </div>
+
+    <p class="content-cards__item--description">
+        {{ film.category }}
+    </p>
+    
+    <p class="content-cards__item--rating">
+        {{ film.rating }}
+    </p>
+</a>

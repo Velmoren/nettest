@@ -1,0 +1,18 @@
+<section class="search">
+    <div class="container">
+        <div class="search-box">
+            <input 
+                [value]="searchString"
+                id="search-input" 
+                type="text" 
+                placeholder="Что хотите посмотреть?"
+                (input)="updateValue($event)"
+            >
+            
+            <button id="search-button" (click)="updateSearch($event)">
+                <img src="./images/search.svg" alt="search">
+                <span>Найти</span>
+            </button>
+        </div>
+    </div>
+</section>
